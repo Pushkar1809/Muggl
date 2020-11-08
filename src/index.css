@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Lora:ital@1&family=Maitree&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Telex&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+
+:root {
+  --primary-light: #f2f4f3;
+  --primary-dark: #0a0908;
+  --secondary-all: #22333b;
+  --primary-accent: #04f06a;
+  --secondary-accent: #1b998b;
+
+  /* --primary-light: #FFE187;
+    --primary-dark: #2E133A;
+    --secondary-all: #CEE9FF;
+    --primary-accent: #9BD093;
+    --secondary-accent: #FFCEC6; */
+
+  --font-title: "Josefin Sans", sans-serif;
+  --font-subtitle: "Lora", serif;
+  --font-body: "Telex", sans-serif;
+
+  --size-xl: 1024px;
+  --size-tablet: 768px;
+  --size-phone: 480px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  font-family: var(--font-body);
+}
+
+#nav--home {
+  margin-left: auto;
+}
+
+nav ul {
+  margin: auto;
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+#logo--img {
+  width: 6rem;
+  margin: 0rem auto 0rem 0rem;
+  padding: 0;
+}
+
+.nav--link {
+  padding: 1rem;
+  color: var(--primary-dark);
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+.home {
+  width: 60vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: var(--font-title);
+}
+.products img {
+  width: 20rem;
+}
