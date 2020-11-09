@@ -76,9 +76,14 @@ nav ul {
 }
 
 .nav--link {
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   color: var(--primary-dark);
   text-transform: uppercase;
+}
+
+.nav--link:hover {
+  text-decoration: wavy;
+  text-decoration-color: var(--primary-accent);
 }
 
 a {
@@ -105,10 +110,43 @@ a {
   padding: 5rem;
 }
 
+.title--text::before {
+  content: url(/resources/Mugs/coffee.png);
+  size: 1rem;
+  font-family: var(--font-subtitle);
+  color: var(--primary-dark);
+  background: var(--primary-accent);
+  font-weight: 200;
+  line-height: normal;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+  padding: 0.25rem;
+}
+
+.home::after {
+  content: "";
+  background: var(--primary-accent);
+  width: 10vw;
+  height: 50vh;
+}
+
+.home::after {
+  content: "";
+  display: block;
+  background: var(--primary-accent);
+  width: 100px;
+  height: 3px;
+}
+
 .title--word {
   padding-right: 3rem;
   letter-spacing: 0.5rem;
   line-height: 6rem;
+}
+
+.description {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 #coffee,
@@ -150,8 +188,9 @@ a {
 .mug {
   margin: 2rem;
 }
+
 .mug:hover {
-  filter: hue-rotate(90deg);
+  filter: drop-shadow(0.75rem 0.75rem 1.5rem var(--primary-accent));
 }
 
 .accent {
