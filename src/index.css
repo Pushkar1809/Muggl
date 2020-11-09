@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Lora:ital@1&family=Maitree&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Telex&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 
 :root {
   --primary-light: #f2f4f3;
   --primary-dark: #0a0908;
   --secondary-all: #22333b;
   --primary-accent: #04f06a;
-  --secondary-accent: #1b998b;
 
   /* --primary-light: #FFE187;
     --primary-dark: #2E133A;
@@ -24,12 +22,39 @@
   --size-phone: 480px;
 }
 
-body {
-  margin: 0;
+* {
+  box-sizing: border-box;
   padding: 0;
+  margin: 0;
+}
+
+body {
   background: var(--primary-light);
   color: var(--primary-dark);
   font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 5.5rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+}
+
+p {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+}
+
+nav {
+  position: fixed;
+  background: var(--primary-light);
+  width: 100vw;
+  z-index: 999;
 }
 
 #nav--home {
@@ -46,27 +71,178 @@ nav ul {
 
 #logo--img {
   width: 6rem;
-  margin: 0rem auto 0rem 0rem;
+  margin: 0rem auto 0rem 7rem;
   padding: 0;
 }
 
 .nav--link {
-  padding: 1rem;
+  padding: 1rem 2rem;
   color: var(--primary-dark);
   text-transform: uppercase;
 }
 
 a {
   text-decoration: none;
+  color: var(--primary-dark);
 }
+
 .home {
-  width: 60vw;
-  height: 75vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-family: var(--font-title);
+  background: var(--primary-dark);
+  color: var(--primary-light);
 }
+
+.title--text {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rem;
+}
+
+.title--word {
+  padding-right: 3rem;
+  letter-spacing: 0.5rem;
+  line-height: 6rem;
+}
+
+#coffee,
+#mugs {
+  color: var(--primary-accent);
+}
+
+.products {
+  display: flex;
+  margin: 4rem;
+  flex-direction: column;
+  flex-flow: column wrap;
+}
+
+.products--title {
+  font-family: var(--font-title);
+  margin-left: 1.5rem;
+}
+
+.display--mugs {
+  display: flex;
+  justify-content: space-around;
+  /* padding: 2rem; */
+}
+
+.display--mugs__col {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  margin: 0 2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.description {
+  text-align: center;
+  font-family: var(--font-subtitle);
+}
+.mug {
+  margin: 2rem;
+}
+.mug:hover {
+  filter: hue-rotate(90deg);
+}
+
+.accent {
+  color: var(--primary-accent);
+}
+
 .products img {
-  width: 20rem;
+  /* width: 20rem; */
+  width: 100%;
+}
+
+.sales {
+  display: flex;
+  background: var(--primary-dark);
+  color: var(--primary-light);
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  flex-flow: column wrap;
+  padding: 4rem;
+}
+
+.sales--title {
+  font-family: var(--font-title);
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.country--container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.country--container__col {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.stat {
+  padding: 2rem;
+  margin: 2rem;
+  font-family: var(--font-subtitle);
+  text-align: center;
+  font-size: 2.25rem;
+}
+
+.country--stats {
+  color: var(--primary-accent);
+  font-family: var(--font-title);
+  font-size: 5rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 6rem;
+  font-family: var(--font-title);
+}
+
+.about--body {
+  font-family: var(--font-subtitle);
+  width: 60vw;
+  height: 50vh;
+  margin: 3rem auto 0 0;
+  padding: auto;
+  font-size: 1.25rem;
+}
+
+.about--logo {
+  width: 25rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 6rem;
+  font-family: var(--font-title);
+}
+
+.contact--container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact--body {
+  padding-top: 3rem;
+  line-height: 2.5rem;
 }
