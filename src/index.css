@@ -240,9 +240,45 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: auto;
 }
 
 .contact--body {
   padding-top: 3rem;
   line-height: 2.5rem;
+}
+
+footer {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
+  flex-direction: column;
+}
+
+.footer--title {
+  font-family: var(--font-subtitle);
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 0 auto;
+  margin: 2rem 6rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.link--image {
+  color: var(--primary-light);
+}
+
+.copyright {
+  margin: auto auto 0.5rem auto;
+  padding: 0;
+  font-family: var(--font-title);
 }
